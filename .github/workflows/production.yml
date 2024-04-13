@@ -58,7 +58,7 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           push: true
-          tags: gv225/devops_demo:${{ github.sha }} # Use Git SHA for tagging
+          tags: gv225/devops_demo:${{ github.sha }} # Use your repository name and Git SHA for tagging
           platforms: linux/amd64,linux/arm64 # Multi-platform support
           cache-from: type=registry,ref=gv225/devops_demo:cache
           cache-to: type=inline,mode=max
